@@ -1,0 +1,237 @@
+
+        
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono:wght@400;500&family=Roboto:wght@100;400;500&display=swap');
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(238, 197, 15);
+    padding: 10px;
+    margin-left:0px;
+    margin-right: 0px;
+    box-shadow: 0px 10px 16px rgb(248,247,247);
+    position: fixed;
+    right: 0px;
+    left: 0px ;
+    top: 0;;
+    z-index: 2;
+}
+.icon{
+    display:inline-block;
+    margin-right: 5px;
+    font-size: 25px;
+    margin-right: 10px;
+}
+.website_name{
+    display:inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: center;
+}
+.add:active{
+    transform: scale (0.98);
+}
+body{
+    margin-top: 4rem;
+    padding-bottom: 3000px;
+    margin-left: 2rem;
+}
+
+.btn_div{
+    position:fixed;
+    display: block;
+    flex-direction: row;
+    top: 7rem;
+    right: 1rem;
+    border: none;
+    border-radius:3px;
+    
+    cursor: pointer;
+    /* border-style: solid; */
+    align-items: center;
+    padding-left:30px;
+    padding-right: 20px;
+   
+  
+    
+}
+
+.learn_more{
+    /* display: flex; */
+    width: 100px;
+    border:none;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+   
+    
+}
+
+.circle{
+    content: "";
+    width: 35px;
+    height: 35px;            
+    background-color: rgb(238, 197, 15);           
+    border-radius: 20px;
+    left:0;
+    top:-8px;
+    position: absolute;
+    font-size: 15px;
+    margin-right: 100px;
+    transition: width 0.45s cubic-bezier(0.65, 0 , 0.076, 1);
+   
+}
+
+.circle:hover{
+    
+    
+    width: 100%;
+    z-index: -1;
+}
+
+.learn_more:hover{
+    color: white;
+    z-index: 2;
+    
+    
+}
+
+.circle::before{
+    content: "";
+    width:13px;
+    height: 3px;
+    display: inline-block;
+    background-color: white;
+    rotate: 25deg;
+    translate: 10px 3px;
+    transition: width 0.45s cubic-bezier(0.65, 0 , 0.076, 1);
+
+}
+
+.circle::after{
+    content: "";
+    width:13px;
+    height: 3px;
+    display: inline-block;
+    background-color:white;
+    rotate: 145deg;
+    translate: -7px 9px;
+    transition: width 0.45s cubic-bezier(0.65, 0 , 0.076, 1);
+
+
+    
+}
+
+.circle:hover::after{
+    translate: -58px 7px;;
+    
+}
+.circle:hover::before{
+    translate: -40px 1px;
+}
+
+.note_div{
+    
+    z-index: -2;
+    display:grid;
+    grid-template-columns: 247px 247px 247px 247px 247px;
+    /* border-style: solid; */
+    column-gap: 40px;
+    row-gap: 40px;
+    padding-top: 10rem;
+}
+
+.note{            
+    position: relative;
+    display: inline-block;
+    /* border-style: solid; */
+    /* border-color: blue; */
+}
+
+.editBt{
+    position: absolute;
+    top:8px;
+    right: 50px;
+    background-color: rgb(21, 177, 21);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+.trashBt{
+    position: absolute;
+    top:8px;
+    right: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.saveBt{
+    position: absolute;
+    top:8px;
+    right: 82px;
+    background-color: rgb(250, 197, 6);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.editBt:hover{
+    color:  rgb(21, 177, 21);
+    background-color: white;
+
+}
+.trashBt:hover{
+    color:  red;
+    background-color: white;
+    
+
+}
+.saveBt:hover{
+    color: rgb(250, 197, 6);;
+    background-color: white;
+}
+.txt_area{
+    padding-top:50px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    background-color: rgb(54, 53, 35);
+    color: white;
+    border-radius: 10px;
+}
+.main{
+    background-color:rgb(54, 53, 35);;
+    /* border-style: solid; */
+    height: 123px;
+    border-radius: 10px;
+    font-family: Roboto Mono;
+    color: white;
+    font-size: 12px; 
+    padding: 50px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.hidden{
+    display: none;
+}
+
+.btn_superdiv{
+    position: fixed;
+    /* border-style: solid; */
+    height: 100px;
+    left: 0;
+    right: 0;
+    top:50px;
+    z-index: 2;
+    background-color: white;
+    
+    
+}
