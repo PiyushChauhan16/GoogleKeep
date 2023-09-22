@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Google Keep Clone</title>
+    <title>KeepSake</title>
     <link rel="stylesheet" type = "text/css" href = "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href = "googleKeepCloneStyle.css">
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href = "{% static 'googleKeepCloneStyle.css' %}">
   
 </head>
 <body>
@@ -33,8 +35,8 @@
 
     <div class = "note_div"></div>
     
-
-    <script src = "googleKeepCloneScript.js"></script>
+    {% load static %}
+    <script src = "{% static 'googleKeepCloneScript.js' %}"></script>
 </body>
 
 </html>
